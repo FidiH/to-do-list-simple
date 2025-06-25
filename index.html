@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0" />
+    <meta
+      http-equiv="X-UA-Compatible"
+      content="ie=edge" />
+    <title>To Do List Simple</title>
+    <link
+      rel="stylesheet"
+      href="style.css"
+      type="text/css"
+      media="all" />
+  </head>
+  <body>
+    <!-- judul web -->
+    <header>
+      <h1>To Do List Simple</h1>
+      <p>Create by dukun_fidih</p>
+    </header>
+    <main>
+      <!--box items -->
+      <div class="boxItems">
+        <!-- item -->
+        <p>aktifkan javascript</p>
+      </div>
+      <!-- tombol menampilkan form untuk tambah item -->
+      <button
+        type="button"
+        class="tombolTambahItem">
+        Tambah
+      </button>
+
+      <!-- form isi dan form edit -->
+      <form
+        id="formInput"
+        class="d-none">
+        <input
+          type="text"
+          class="inputJudul"
+          name="inputJudul"
+          placeholder="Judul…"
+          id="inputJudul" />
+        <textarea
+          name="inputDeskripsi"
+          id="inputDeskripsi"
+          cols="30"
+          rows="10"
+          class="inputDeskripsi"
+          placeholder="deskripsi…"></textarea>
+        <button
+          type="button"
+          class="tombolForm tombolTambahkanItem">
+          Tambahkan
+        </button>
+      </form>
+
+      <p style="height: 50vh"></p>
+    </main>
+
+    <script
+      src="script.js"
+      type="text/javascript"
+      charset="utf-8"></script>
+  </body>
+</html>
