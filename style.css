@@ -4,23 +4,22 @@ males banget styling tadi pake tailwind ngga secape ini, huhh....
 
 */
 
-
-*{
+* {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   outline: none;
-  transition: .2s;
+  transition: 0.2s;
 }
 
-body{
+body {
   width: 100%;
   height: 100vh;
   font-family: arial, Sans-Serif;
   position: relative;
 }
 
-header{
+header {
   color: #fff;
   display: flex;
   background: #9146c5;
@@ -32,8 +31,9 @@ header{
   flex-direction: column;
 }
 
-main{
-  background-color: #fefeff;color: #262626;
+main {
+  background-color: #fefeff;
+  color: #262626;
   position: absolute;
   width: 100%;
   padding: 30px 7%;
@@ -41,39 +41,40 @@ main{
   margin-top: 22vh;
 }
 
-.item{
+.item {
   border: 2px solid #bbbbbb;
   border-radius: 15px;
   width: 100%;
   margin-bottom: 10px;
   overflow: hidden;
 }
-.item .infoItem{
-  padding: .7rem 1rem;
+.item .infoItem {
+  padding: 0.7rem 1rem;
 }
-.item .aksiItem{
+.item .aksiItem {
   background-color: #9146c5;
   display: flex;
   justify-content: space-around;
 }
-.item .aksiItem button{
-  background:none ;
+.item .aksiItem button {
+  background: none;
   width: 100%;
-  padding: .7rem;
+  padding: 0.7rem;
   border: none;
-  font-weight:700;color: #fff;
+  font-weight: 700;
+  color: #fff;
 }
-.item .aksiItem button:hover{
-  background: #d9b2ee ;
+.item .aksiItem button:hover {
+  background: #d9b2ee;
 }
 
-.boxKosong{
+.boxKosong {
   font-size: 1.2rem;
   color: #b0b0b0;
   padding: 1rem;
 }
 
-.tombolTambahItem{
+.tombolTambahItem {
   position: fixed;
   bottom: 5%;
   right: 10%;
@@ -87,45 +88,79 @@ main{
   font-weight: 700;
 }
 
-
-#formInput{
-  background-color: #a331c09c;
+#formInput {
+  background-color: #9146c5;
   width: 90%;
-  padding: 1rem;
+  padding: .9rem;
   position: fixed;
-  top: 30vh;
+  top: 20vh;
   border-radius: 1rem;
+  box-shadow: 0 0 0 30rem #e2c7f7d8;
+  transition: box-shadow .2s ease-in .2s, margin .2s ease .1s, transform .2s ease .1s;
 }
 
-#formInput input, #formInput textarea{
+#formInput input,
+#formInput textarea {
   font-family: inherit;
   width: 100%;
-  padding: .7rem;
-  margin: .3rem 0;
+  padding: 0.7rem;
+  margin: 0.3rem 0;
   border: none;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
 }
 
-.tombolForm{
+.tombolForm {
   border: none;
-  border-radius: .6rem;
+  border-radius: 0.6rem;
   background: #f9f2fb;
   color: #232323;
-  padding: .5rem 1rem;
+  padding: 0.5rem 1rem;
 }
 
-pre{
+.tawarkanInstallApp {
+  width: 14.5rem;
+  padding: 1rem;
+  position: fixed;
+  bottom: 2rem;
+  font-size: 0.8rem;
+  left: 1rem;
+  background-color: #9146c5;
+  border-radius: 0.7rem;
+  color: #fff;
+  transition: margin-left 1s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.boxTombol {
+  margin-top: 0.6rem;
+}
+
+.boxTombol button {
+  padding: 0.3rem 0.5rem;
+  background-color: #fff;
+  border: none;
+  border-radius: 0.5rem;
+  font-size: inherit;
+  margin-right: 0.5rem;
+}
+
+pre {
   text-wrap: wrap;
   font-family: inherit;
 }
 
-.sudahSelesai{
+.sudahSelesai {
   background-color: #e8d5f3;
   text-decoration: line-through;
   color: #a7a7a7;
   font-style: italic;
 }
 
-.d-none{
-  display: none;
+#formInput.d-none {
+  margin-left: -150%;
+  transform: scale(0);
+  box-shadow: 0 0 0 0 #8d34d3;
+}
+
+.tawarkanInstallApp.installAppHilang{
+  margin-left: -120%;
 }

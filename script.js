@@ -1,3 +1,13 @@
+// if ('serviceWorker' in navigator) {
+//   navigator.serviceWorker.register('/sw.js')
+//     .then(registration => {
+//       console.log('Service worker terdaftar');
+//     })
+//     .catch(error => {
+//       console.error('Service worker gagal terdaftar', error);
+//     });
+// }
+
 // ambil element yang dibutuhkan
 // variabel global
 // ambil data yang ada di localstorage atau membuat localstorage
@@ -131,8 +141,32 @@ window.addEventListener("click", e => {
     } else {
       formInput.classList.remove("d-none");
     }
+    // end
+  }
+
+  if (e.target.closest("#tutupInfo")) {
+    // hilangkan element
+    document
+      .querySelector(".tawarkanInstallApp")
+      .classList.add("installAppHilang");
+      // set data 
+    storage({
+      tipe: "set",
+      key: "tutupInfo",
+      value: true,
+    });
   }
 });
+
+// tampilkan info  untuk install pwa
+if (!storage({ tipe: "get", key: "tutupInfo" })) {
+  setTimeout(function () {
+    document
+      .querySelector(".tawarkanInstallApp")
+      .classList.remove("installAppHilang");
+  }, 10000);
+}
+// hilangkan tawaran info pwa jika user telah klik tutup
 
 // fungsi
 
@@ -219,7 +253,8 @@ function updateDOM() {
   let boxItems = document.querySelector(".boxItems");
   kumpulanItems
     ? (boxItems.innerHTML = kumpulanItems)
-    : (boxItems.innerHTML = '<div class="boxKosong">Masih Kosong <br> klik tambah...</div>');
+    : (boxItems.innerHTML =
+        '<div class="boxKosong">Masih Kosong <br> klik tambah...</div>');
 }
 
 // huhhh cape om
