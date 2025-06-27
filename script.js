@@ -1,12 +1,12 @@
-// if ('serviceWorker' in navigator) {
-//   navigator.serviceWorker.register('/sw.js')
-//     .then(registration => {
-//       console.log('Service worker terdaftar');
-//     })
-//     .catch(error => {
-//       console.error('Service worker gagal terdaftar', error);
-//     });
-// }
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('/sw.js')
+    .then(registration => {
+      console.log('Service worker terdaftar');
+    })
+    .catch(error => {
+      console.error('Service worker gagal terdaftar', error);
+    });
+}
 
 // ambil element yang dibutuhkan
 // variabel global
