@@ -1,5 +1,5 @@
 if ('serviceWorker' in navigator) {
-  navigator.serviceWorker.register('/sw.js')
+  navigator.serviceWorker.register('/to-do-list-simple/sw.js')
     .then(registration => {
       console.log('Service worker terdaftar');
     })
