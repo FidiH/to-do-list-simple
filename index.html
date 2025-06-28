@@ -1,74 +1,63 @@
 <!doctype html>
 <html lang="id">
-  <head>
-    <meta charset="UTF-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1.0" />
-    <meta
-      http-equiv="X-UA-Compatible"
-      content="ie=edge" />
-    <title>To Do List Simple</title>
-    <link
-      rel="stylesheet"
-      href="style.css"
-      type="text/css" />
-    <link rel="manifest" href="/to-do-list-simple/manifest.json">
-  </head>
-  <body>
-    <!-- judul web -->
-    <header>
-      <h1>To Do List Simple</h1>
-      <p>Create by dukun_fidih</p>
-    </header>
-    <main>
-      <!--box items -->
-      <div class="boxItems">
-        <!-- item -->
-        <p>aktifkan javascript</p>
-      </div>
-      <!-- tombol menampilkan form untuk tambah item -->
-      <button
-        type="button"
-        class="tombolTambahItem">
-        Tambah
-      </button>
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <title>To Do List Simple</title>
+        <link rel="stylesheet" href="style.css" type="text/css" />
+        <link rel="manifest" href="/to-do-list-simple/manifest.json" />
+        <link rel="icon" href="/to-do-list-simple/favicon.ico" />
+    </head>
+    <body>
+        <!-- judul web -->
+        <header>
+            <h1>To Do List Simple</h1>
+            <p>Create by dukun_fidih</p>
+        </header>
+        <main>
+            <!--box items -->
+            <div class="boxItems">
+                <!-- item -->
+                <p>aktifkan javascript</p>
+            </div>
+            <!-- tombol menampilkan form untuk tambah item -->
+            <button type="button" class="tombolTambahItem">Tambah</button>
 
-      <!-- form isi dan form edit -->
-      <form
-        id="formInput"
-        class="d-none">
-        <input
-          type="text"
-          class="inputJudul"
-          name="inputJudul"
-          placeholder="Judul…"
-          id="inputJudul" />
-        <textarea
-          name="inputDeskripsi"
-          id="inputDeskripsi"
-          cols="30"
-          rows="10"
-          class="inputDeskripsi"
-          placeholder="deskripsi…"></textarea>
-        <button
-          type="button"
-          class="tombolForm tombolTambahkanItem">
-          Tambahkan
-        </button>
-      </form>
-      
-      <div class="tawarkanInstallApp installAppHilang">
-        <p>Ingin tambahkan ke Home Screen untuk akses lebih cepat dan mudah? klik icon titik tiga pada browser dan klik add to home screen > install</p>
-        <div class="boxTombol">
-          <button id="tutupInfo" type="button">Tutup</button>
-      </div>
-    </main>
+            <!-- form isi dan form edit -->
+            <form id="formInput" class="d-none">
+                <input
+                    type="text"
+                    class="inputJudul"
+                    name="inputJudul"
+                    placeholder="Judul…"
+                    id="inputJudul"
+                />
+                <textarea
+                    name="inputDeskripsi"
+                    id="inputDeskripsi"
+                    cols="30"
+                    rows="10"
+                    class="inputDeskripsi"
+                    placeholder="deskripsi…"
+                ></textarea>
+                <button type="button" class="tombolForm tombolTambahkanItem">
+                    Tambahkan
+                </button>
+            </form>
 
-    <script
-      src="script.js"
-      type="text/javascript"
-      charset="utf-8"></script>
-  </body>
+            <div class="tawarkanInstallApp installAppHilang">
+                <p>
+                    Ingin tambahkan ke Home Screen untuk akses lebih cepat dan
+                    mudah? klik icon titik tiga pada browser dan klik add to
+                    home screen > install
+                </p>
+                <div class="boxTombol">
+                    <button id="tutupInfo" type="button">Tutup</button>
+                </div>
+            </div>
+        </main>
+
+        <script src="script.js" type="text/javascript" charset="utf-8"></script>
+    </body>
 </html>
-

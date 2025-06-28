@@ -1,15 +1,21 @@
 {
-  "short_name": "Todo list simple",
-  "name": "Todo list simple",
-  "icons": [
-    {
-      "src": "to-do-list-simple/img/icon.jpg",
-      "type": "image/png",
-      "sizes": "192x192"
-    }
-  ],
-  "start_url": "/to-do-list-simple",
-  "background_color": "#8d34d3",
-  "display": "standalone",
-  "theme_color": "#8d34d3"
+    "name": "To Do List Simple",
+    "short_name": "ToDo",
+    "start_url": "/to-do-list-simple/",
+    "scope": "/to-do-list-simple/",
+    "display": "standalone",
+    "background_color": "#8c14b4",
+    "theme_color": "#b013e5",
+    "icons": [
+        {
+            "src": "/to-do-list-simple/icon-192.jpg",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "/to-do-list-simple/icon-512.jpg",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
 }
